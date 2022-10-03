@@ -1,0 +1,10 @@
+-Model
+---Trained_Model
+
+-Sample_Data
+---Train
+-----Fire
+-----Normal
+---Test
+-----Fire
+-----Normal
