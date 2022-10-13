@@ -1,10 +1,12 @@
--Model
----Trained_Model
+\yolov5-master
 
--Sample_Data
----Train
------Fire
------Normal
----Test
------Fire
------Normal
+\dataset
+--\fire
+----\train
+--------\images
+--------\labels
+----\val
+--------\images
+--------\labels
+
+
