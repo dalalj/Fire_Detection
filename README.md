@@ -12,4 +12,8 @@
 
 - Data label tools: we use roboflow and labelImg to label our dataset
 
+- example1.jpg and example2.jpg are examples detection by our model
+
+- welcome.png and upload.png are our web app examples.
+
 
