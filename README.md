@@ -16,4 +16,6 @@
 
 - welcome.png and upload.png are our web app examples.
 
+![Image text](https://github.com/dalalj/Fire_Detection/blob/main/example1.jpg)
+
 
