@@ -16,6 +16,8 @@
 
 - welcome.png and upload.png are our web app examples.
 
+- support video detetion.
+
 ![Image text](https://github.com/dalalj/Fire_Detection/blob/main/example1.jpg)
 
 
