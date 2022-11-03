@@ -1,0 +1,17 @@
+.table-controls {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .table-controls > li {
+    display: inline-block;
+    margin: 0 2px;
+    line-height: 1; }
+    .table-controls > li > a {
+      display: inline-block; }
+      .table-controls > li > a i {
+        margin: 0;
+        color: #555;
+        font-size: 16px;
+        display: block; }
+        .table-controls > li > a i:hover {
+          text-decoration: none; }
