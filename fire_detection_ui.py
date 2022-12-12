@@ -16,7 +16,7 @@ def welcome():
     show_file2.image("example2.jpg")
 
 def upload_image():
-    upload_file=st.file_uploader("please upload the picture",type=["jpg","png","jpeg","mp4"])
+    upload_file=st.file_uploader("please upload the picture",type=["jpg","png","jpeg"])
     if upload_file is not None:
         show_file=st.empty()
         show_file.image(upload_file)
@@ -59,7 +59,7 @@ def get_detection_folder():
 def main():
     selected_box=st.sidebar.selectbox(
         "Choose one of the following",
-        ("Welcome","Subscription List","Upload Image","Upload Video","Camera")
+        ("Welcome","Subscription List","Upload Image","Upload Video")
     )
     
     submit_button=st.sidebar.button("Fire Detection")
@@ -148,19 +148,6 @@ def main():
                     video_file = open(output_file_path, 'rb')
                     video_bytes = video_file.read()
                     st.video(video_bytes)
-    if selected_box=="Upload Video":
-        if submit_button:
-            parser.add_argument('--weights', nargs='+', type=str,
-                                    default='best.pt', help='model.pt path(s)')
-            parser.add_argument('--source', type=str,
-                                    default='0', help='source')
-            opt, unknown = parser.parse_known_args()
-            
-            opt.source=f'data/{upload_file.name}'
-            opt.project=''
-            opt.name=f'result/'
-            opt.exist_ok=True
-            detect.main(opt)
     
 if __name__=="__main__":
     main()
